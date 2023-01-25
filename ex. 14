@@ -1,0 +1,131 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM90qGT9uIZ2HVhREzq1wzl",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/fareis2000/Python/blob/main/ex.%2014\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 48,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cp1J-MGWklg8",
+        "outputId": "12a20a06-1db1-405c-8850-aff173433848"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "=======================================\n",
+            "Programa para Conversão de Temperaturas\n",
+            "=======================================\n",
+            "1. Converter de Celsius para Fahrenheit\n",
+            "2. Converter de Fahrenheit para Celsius\n",
+            "3. converter de Celsius para kelvin\n",
+            "4. converter de kelvin para Celcius\n",
+            "5. converter de Kelvin para Fahrenheit\n",
+            "6. converter de Fahrenheit para Kelvin\n",
+            "Escolha o tipo de conversão que deseja realizar: 1\n",
+            "Entre com a temperatura em graus Celsius: 20\n",
+            "Valor em Fahrenheit: 68.0°F\n"
+          ]
+        }
+      ],
+      "source": [
+        "def menu_inicial():\n",
+        "    print('=' *39)\n",
+        "    print('Programa para Conversão de Temperaturas')\n",
+        "    print('=' *39)\n",
+        "    print('1. Converter de Celsius para Fahrenheit')\n",
+        "    print('2. Converter de Fahrenheit para Celsius')\n",
+        "    print('3. converter de Celsius para kelvin')\n",
+        "    print('4. converter de kelvin para Celcius')\n",
+        "    print('5. converter de Kelvin para Fahrenheit')\n",
+        "    print('6. converter de Fahrenheit para Kelvin')\n",
+        "\n",
+        "def cel_fahr():\n",
+        "    C = float(input('Entre com a temperatura em graus Celsius: '))\n",
+        "    F = C * (9 / 5) + 32\n",
+        "    print('Valor em Fahrenheit: {0}°F'.format(F))\n",
+        "\n",
+        "\n",
+        "def fahr_cel():\n",
+        "    F = float(input('Entre com a temperatura em graus Fahrenheit: '))\n",
+        "    C = (F - 32) * (5 / 9)\n",
+        "    print('Valor em Celsius: {0}°C'.format(C))\n",
+        "\n",
+        "\n",
+        "def kel_cel():\n",
+        "    K = float(input('Entre com a temperatura em graus Kelvin: '))\n",
+        "    C = K - 273\n",
+        "    print('Valor em kelvin: {0}°K'.format(C))\n",
+        "\n",
+        "\n",
+        "def cel_kel():\n",
+        "    C = float(input('Entre com a temperatura em graus Celsius: '))\n",
+        "    K = C + 273\n",
+        "    print('Valor em kelvin: {0}°C'.format(K))\n",
+        "\n",
+        "\n",
+        "def kel_fahr():\n",
+        "    K = float(input('Entre com a temperatura em graus kelvin: '))\n",
+        "    F = (9/5) * (K - 273) +32\n",
+        "    print('Valor em kelvin: {0}°C'.format(F))\n",
+        "\n",
+        "\n",
+        "def fahr_kel():\n",
+        "    F = float(input('Entre com a temperatura em graus Fahrenheit: '))\n",
+        "    K = (5/9) * (F - 32) + 273.15\n",
+        "    print('Valor em kelvin: {0}°C'.format(K))\n",
+        "\n",
+        "\n",
+        "if __name__=='__main__':\n",
+        "    menu_inicial()\n",
+        "    escolha = input('Escolha o tipo de conversão que deseja realizar: ')\n",
+        "\n",
+        "    if escolha == '1':\n",
+        "        cel_fahr()\n",
+        "\n",
+        "    if escolha == '2':\n",
+        "        fahr_cel()\n",
+        "\n",
+        "    if escolha == '3':\n",
+        "        kel_cel()\n",
+        "    \n",
+        "    if escolha == '4':\n",
+        "        cel_kel()\n",
+        "\n",
+        "    if escolha == '5':\n",
+        "        kel_fahr()\n",
+        "\n",
+        "    if escolha == '6':\n",
+        "        fahr_kel"
+      ]
+    }
+  ]
+}
