@@ -1,0 +1,68 @@
+def menu_inicial():
+    print('=' *39)
+    print('Programa para Conversão de Temperaturas')
+    print('=' *39)
+    print('1. Converter de Celsius para Fahrenheit')
+    print('2. Converter de Fahrenheit para Celsius')
+    print('3. converter de Celsius para kelvin')
+    print('4. converter de kelvin para Celcius')
+    print('5. converter de Kelvin para Fahrenheit')
+    print('6. converter de Fahrenheit para Kelvin')
+
+def cel_fahr():
+    C = float(input('Entre com a temperatura em graus Celsius: '))
+    F = C * (9 / 5) + 32
+    print('Valor em Fahrenheit: {0}°F'.format(F))
+
+
+def fahr_cel():
+    F = float(input('Entre com a temperatura em graus Fahrenheit: '))
+    C = (F - 32) * (5 / 9)
+    print('Valor em Celsius: {0}°C'.format(C))
+
+
+def kel_cel():
+    K = float(input('Entre com a temperatura em graus Kelvin: '))
+    C = K - 273
+    print('Valor em kelvin: {0}°K'.format(C))
+
+
+def cel_kel():
+    C = float(input('Entre com a temperatura em graus Celsius: '))
+    K = C + 273
+    print('Valor em kelvin: {0}°C'.format(K))
+
+
+def kel_fahr():
+    K = float(input('Entre com a temperatura em graus kelvin: '))
+    F = (9/5) * (K - 273) +32
+    print('Valor em kelvin: {0}°C'.format(F))
+
+
+def fahr_kel():
+    F = float(input('Entre com a temperatura em graus Fahrenheit: '))
+    K = (5/9) * (F - 32) + 273.15
+    print('Valor em kelvin: {0}°C'.format(K))
+
+
+if __name__=='__main__':
+    menu_inicial()
+    escolha = input('Escolha o tipo de conversão que deseja realizar: ')
+
+    if escolha == '1':
+        cel_fahr()
+
+    if escolha == '2':
+        fahr_cel()
+
+    if escolha == '3':
+        kel_cel()
+    
+    if escolha == '4':
+        cel_kel()
+
+    if escolha == '5':
+        kel_fahr()
+
+    if escolha == '6':
+        fahr_kel
