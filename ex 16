@@ -1,0 +1,15 @@
+from datetime import date, datetime
+
+# pedir a data de nascimento ao usuário
+birthdate_str = input("Informe a sua data de nascimento no formato AAAA-MM-DD: ")
+
+# converter a string em um objeto date
+birthdate = datetime.strptime(birthdate_str, "%Y-%m-%d").date()
+
+# data atual
+today = date.today()
+
+# calcula a idade
+age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
+
+print(age)
