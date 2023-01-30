@@ -1,0 +1,30 @@
+print('=' *56)
+print('Digite os valores e a Operação no foramato x operação y: ')
+print('=' *56)
+entrada = input().split()
+if entrada[1] == '+':
+    x = float(entrada[0])
+    y = float(entrada[2])
+    result = x + y
+    print('{:.2f}'.format(result))
+  
+elif entrada[1] == '-':
+    x = float(entrada[0])
+    y = float(entrada[2])
+    result = x - y
+    print('{:.2f}'.format(result))
+
+elif entrada[1] == 'x':
+    x = float(entrada[0])
+    y = float(entrada[2])
+    result = x * y
+    print('{:.2f}'.format(result))
+
+elif entrada[1] == '/':
+    x = float(entrada[0])
+    y = float(entrada[2])
+    result = x / y
+    print('{:.2f}'.format(result))
+
+else:
+    print("Operação inválida")
