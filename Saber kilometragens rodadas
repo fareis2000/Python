@@ -1,0 +1,4 @@
+km = float(input('quantos km rodou? '))
+dias = float(input('quantos dias rodou? '))
+vf = (60*dias) + (km*0.15)
+print('O valor total ficou {:.2f}'.format(vf))
