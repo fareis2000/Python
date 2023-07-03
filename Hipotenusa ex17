@@ -1,0 +1,9 @@
+import math
+
+catad = float(input('Digite o cateto adjacente: '))
+
+catop = float(input('Digite o cateto oposto: '))
+
+hipotenusa = math.hypot(catad, catop)
+
+print ('A hipotenusa é: {:.2f}' .format(hipotenusa))
