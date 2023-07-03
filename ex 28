@@ -1,0 +1,18 @@
+import random
+from time import sleep
+lista = [0, 1, 2, 3, 4, 5]
+
+pensar = random.choice(lista)
+
+print('-=-' * 19)
+escolha = input('Pensei em um numero entre 0 e 5 consegue advinhar? ')
+print('-=-' * 19)
+
+print('PROCESSANDO......')
+
+sleep(3)#é para fazer uma tensão
+
+if pensar == escolha:
+    print('Você venceu !!!!!!! Eu pensei no {} e vc acertou' .format(pensar))
+else:
+    print('Voce perdeu !!!!!!! Eu pensei no {} e vc chutou {} '.format(pensar, escolha))
