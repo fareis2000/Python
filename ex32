@@ -1,0 +1,12 @@
+import calendar
+from datetime import date
+
+
+ano = float(input('Digite o ano, 0 para usarmos o ano atual: '))
+
+if ano == 0:
+    ano = date.today().year
+if calendar.isleap(ano):
+    print('Seu ano {} é bissexto!' .format(ano))
+else:
+    print('seu ano {} nao é bissexto imão nao insiste'.format(ano))
