@@ -1,0 +1,9 @@
+qualdistancia = float(input('Qual a distancia'))
+
+if qualdistancia > 200:
+    qualdistancia = (qualdistancia - 200)
+    valorapagar = 0.45 * qualdistancia
+    print('O valor da sua viagem sera R${}' .format(qualdistancia))
+else:
+    qualdistancia * 0.50
+    print('O valor da sua viagem sera R${}' .format(qualdistancia))
