@@ -1,0 +1,6 @@
+numero = float(input('Me diga um numero e falarei se é impar ou par: '))
+print('o numero {} é'.format(numero))
+if numero % 2 == 0:
+    print('par')
+else:
+    print('impar')
