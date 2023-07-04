@@ -1,0 +1,8 @@
+velcarro = float(input('Velocidade do carro: '))
+taxa = 7
+if velcarro > 80:
+    quilometrosadicionais = (velcarro - 80)
+    valapagar = quilometrosadicionais * taxa
+    print('sua multa é de: {:.2f}R$' .format(valapagar))
+else:
+    print('sem multa sortudo!!!!!')
