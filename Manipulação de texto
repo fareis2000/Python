@@ -1,0 +1,33 @@
+#frase[9] pega o caracter 9
+#frase[9:13] vai d0 caracter 9 ate o 12
+#frase9[9:21] vai do 9 ate o 21
+#frase[9:21:2] vai pulando de 2 em 2
+#frase[:5] onde ele termina
+#frase[15:] começa com o 15
+#frase[9::3] começa no nove e pula de 3 em 3
+
+#len(frase)conta os caracteres da frase
+#frase.count('o')conta os o minusculos
+#frase.count('o',0,13) conta os o do 0 ao 12
+#frase.find('deo') mostra onde começou o deo
+#frase.find('Android') quando nao existe na frase a palavra retorna -1
+#'curso' in frase #escreve 1
+
+#TRANSFORMAÇÃO
+#frase.replace('Python', 'Android') substitui python por android
+#frase.upper() deixa tudo maiusculo
+#frase.lower() deixa minusculo
+#frase.capitalize() deixam tudo minusculo e só o primeiro caracter fica maiusculo
+#frase.title()deixam o primeiro caracter de cada palavra em maiusculo
+#frase.strip() remove espaços inuteis
+#frase.rstrip() remove espaços inuteis da direita
+#frase.lstrip() remove espaços inuteis da esquerda
+
+#DIVISÃO
+#frase.split() divide onde estiver espaços
+
+#JUNÇÃO
+#'-'.join(frase) junta a frase com tracinhos
+
+frase = 'Curso em Video Python'
+print ('Curso' in frase)
