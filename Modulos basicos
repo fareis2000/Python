@@ -1,0 +1,14 @@
+#Math
+#ceil arredonda pra cima
+#floor arredonda para baixo
+#trunc elimina a da virgula p frente
+#pow potencia
+#sqrt raiz quadrada
+#factorial 
+#import math
+#num = int(input('Digite um Numero: '))
+#raiz = math.sqrt(num)
+#rint ('A raiz de {} é igual a {}' .format(num, math.ceil(raiz)))
+import random
+num = random.randint(1, 10)
+print (num)
