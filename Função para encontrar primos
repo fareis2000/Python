@@ -1,0 +1,11 @@
+def encontrar_numeros_primos(n):
+    primos = []  # Cria uma lista vazia chamada "primos" para armazenar os números primos encontrados.
+    for num in range(2, n+1):  # Loop para iterar pelos números de 2 a n (inclusive).
+        for i in range(2, num):  # Loop para verificar se o número atual é primo.
+            if num % i == 0:  # Verifica se o número é divisível por algum outro número (além de 1 e ele mesmo).
+                break  # Se for divisível, interrompe o loop, pois não é um número primo.
+        else:  # Se o loop "for" não foi interrompido (ou seja, o número é primo).
+            primos.append(num)  # Adiciona o número primo à lista "primos".
+    return primos  # Retorna a lista contendo todos os números primos encontrados no intervalo.
+
+print(encontrar_numeros_primos(20))  # Chama a função com o argumento 20 e imprime o resultado.
