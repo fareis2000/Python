@@ -1,15 +1,18 @@
-def parimpar(*args):
+# Crie uma função fala se um número é par ou ímpar.
+# Retorne se o número é par ou ímpar.
+def par_impar(numero):
+    multiplo_de_dois = numero % 2 == 0
 
-    for numero in args:
-        resto = numero % 2
-        if resto == 0:
-            print(numero, "é par")
-        else:
-            print(numero, "é impar")
+    if multiplo_de_dois:
+        return f'{numero} é par'
+    return f'{numero} é ímpar'
 
 
-parimpar(1, 2, 3, 4, 5)
+outro_par_impar = par_impar
+dois_e_par = outro_par_impar(2)
+print(dois_e_par)
+print(par_impar(3))
+print(par_impar(15))
+print(par_impar(16))
 
-numeros = 1, 2, 3, 4, 5
-
-parimpar(*numeros)
+print(par_impar is outro_par_impar)
